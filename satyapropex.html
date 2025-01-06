@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.satyapropex.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .modal img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">www.satyapropex.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#properties">Properties</a> <!-- Fixed link -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Welcome to Satya Propex</h1>
+        <p>Find your dream home or the perfect plot today!</p>
+    </header>
+
+    <main class="container my-5">
+        <!-- Properties Section with correct id="properties" -->
+        <section id="properties">
+            <h2 class="mb-4">Available Properties</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="house1.jpg" class="card-img-top" alt="House 1" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Villa</h5>
+                            <p class="card-text">4,000 sqft | 5 Beds | 4 Baths</p>
+                            <p class="card-text">Price: $1,200,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="plot1.jpg" class="card-img-top" alt="Plot 1" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                        <div class="card-body">
+                            <h5 class="card-title">Residential Plot</h5>
+                            <p class="card-text">2,500 sqft</p>
+                            <p class="card-text">Price: $300,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="house2.jpg" class="card-img-top" alt="House 2" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Apartment</h5>
+                            <p class="card-text">1,200 sqft | 2 Beds | 2 Baths</p>
+                            <p class="card-text">Price: $600,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sold-properties" class="mt-5">
+            <h2 class="mb-4">Sold Properties</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="house3.jpg" class="card-img-top" alt="House 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Cozy Cottage</h5>
+                            <p class="card-text">2,000 sqft | 3 Beds | 2 Baths</p>
+                            <p class="card-text">Status: Sold</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="plot2.jpg" class="card-img-top" alt="Plot 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Commercial Plot</h5>
+                            <p class="card-text">5,000 sqft</p>
+                            <p class="card-text">Status: Sold</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="house4.jpg" class="card-img-top" alt="House 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Urban Duplex</h5>
+                            <p class="card-text">3,500 sqft | 4 Beds | 3 Baths</p>
+                            <p class="card-text">Status: Sold</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section Added here -->
+    <section id="contact" class="container my-5">
+        <h2 class="mb-4">Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+        <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+        <p>Email: <a href="mailto:info@satyapropex.com">info@satyapropex.com</a></p>
+        <p>Address: 123, Real Estate Blvd, City, Country</p>
+    </section>
+
+    <!-- Image Modals -->
+    <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Luxury Villa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="house1.jpg" alt="Luxury Villa">
+                    <img src="house1_interior1.jpg" alt="Luxury Villa Interior 1">
+                    <img src="house1_interior2.jpg" alt="Luxury Villa Interior 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Residential Plot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="plot1.jpg" alt="Residential Plot">
+                    <img src="plot1_view1.jpg" alt="Plot View 1">
+                    <img src="plot1_view2.jpg" alt="Plot View 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modern Apartment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="house2.jpg" alt="Modern Apartment">
+                    <img src="house2_interior1.jpg" alt="Apartment Interior 1">
+                    <img src="house2_interior2.jpg" alt="Apartment Interior 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with clickable phone number -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Satya Propex. All rights reserved.</p>
+        <p>If you have any questions, feel free to <a href="tel:+1234567890" class="text-white">Call Us</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
